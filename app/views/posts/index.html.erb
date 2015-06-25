@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Posts</h1>
+
+<%= react_component('PostsList', { initialPosts: @posts }, { pretender: params[:nopretender].nil? }) %>
+
+<%= link_to 'New Post', new_post_path %>
